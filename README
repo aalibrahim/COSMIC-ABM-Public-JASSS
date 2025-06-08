@@ -1,0 +1,202 @@
+# Agent-Based Model for Payment-for-Performance in Tanzania: Maternal and Child Health
+
+This repository contains the supplementary material for the peer-reviewed publication:
+
+**"Agent-Based Modeling as an Evaluation Tool to Understand the Mechanisms of a Financial Incentives Scheme for Maternal and Child Health in Tanzania"**
+
+*Authors: Abdullah I. Alibrahim, Nicholaus Mziray, Peter Binyaruka, John Maiba, Rachel Cassidy, Zaid Chalabi, Josephine Borghi, Anna M. Foss*
+
+## Overview
+
+This Agent-Based Model (ABM) simulates the complex interactions between women of reproductive age, healthcare facilities, and district managers within Tanzania's maternal healthcare system to evaluate the effects of a Pay-for-Performance (P4P) program on facility-based delivery rates.
+
+## Model Description
+
+The model includes:
+- **1,866 women agents** representing women of reproductive age
+- **3 healthcare facility agents** (dispensaries and health centers)
+- **1 district manager agent**
+- **Multiple scenarios** including P4P with/without payment delays and district manager interventions
+
+Key outcomes modeled:
+- Facility-based delivery rates
+- Drug availability and staff motivation
+- Out-of-pocket payment costs
+- Effects of payment delays on program effectiveness
+
+## System Requirements
+
+### Software Requirements
+- **AnyLogic Personal Learning Edition** (free) or higher
+  - Download from: https://www.anylogic.com/downloads/
+  - Minimum version: AnyLogic 8.0
+  - Recommended: AnyLogic 8.8 or later
+
+### Hardware Requirements
+- **Operating System**: Windows 10/11, macOS 10.14+, or Linux
+- **RAM**: Minimum 4GB, recommended 8GB+
+- **Storage**: At least 2GB free space
+- **Processor**: Intel i5 or equivalent
+
+## Installation and Setup
+
+### Step 1: Install AnyLogic
+1. Visit https://www.anylogic.com/downloads/
+2. Create a free account if you don't have one
+3. Download AnyLogic Personal Learning Edition
+4. Follow the installation instructions for your operating system
+5. Launch AnyLogic and activate your license
+
+### Step 2: Download the Model
+1. Clone this repository or download as ZIP:
+   ```bash
+   git clone [repository-url]
+   ```
+   OR
+   - Click the green "Code" button above
+   - Select "Download ZIP"
+   - Extract the ZIP file to your desired location
+
+### Step 3: Open the Model
+1. Launch AnyLogic
+2. Click "Open Model" or use File → Open
+3. Navigate to the downloaded repository folder
+4. Select the main model file: `COSMIC-ABM.alp`
+5. Click "Open"
+
+## Running the Model
+
+### Basic Model Execution
+1. Once the model is loaded, you should see the model interface
+2. Click the "Run" button (▶) in the toolbar
+3. The simulation will begin and display real-time results
+4. Use the controls to pause, stop, or adjust simulation speed
+
+### Model Parameters
+The model includes several configurable parameters:
+
+**Facility Parameters:**
+- Facility capacity relaxation (1-3 beds)
+- Drug sharing thresholds (50-60%)
+- Initial facility characteristics
+
+**Woman Agent Parameters:**
+- Social network size (3-6 connections)
+- Experience modifiers for facility/home delivery
+- Pregnancy initiation rates
+
+**District Manager Parameters:**
+- Visit frequency and duration
+- Drug sharing facilitation
+- Strategy sharing effectiveness
+
+### Scenario Analysis
+The model supports five main scenarios:
+1. **No P4P**: Baseline scenario without payment-for-performance
+2. **P4P with delays**: Current implementation with payment delays
+3. **P4P without delays**: Ideal implementation with timely payments
+4. **P4P with delays, no manager visits**: Limited district manager involvement
+5. **P4P without delays, no manager visits**: Ideal payments but no manager support
+
+To run different scenarios:
+1. Use the scenario selection controls in the model interface
+2. Adjust parameters as needed
+3. Click "Run" to execute the selected scenario
+4. Compare results across scenarios using the built-in visualization tools
+
+## Model Outputs
+
+The model generates several key outputs:
+
+### Primary Metrics
+- **Facility-based delivery rates** (monthly and cumulative)
+- **Drug availability** at each facility
+- **Staff kindness and interpersonal quality** scores
+- **Out-of-pocket payment** levels
+
+### Visualization
+- Real-time charts showing delivery rates over time
+- Facility-specific performance indicators
+- Comparative scenario results
+- Statistical confidence intervals (from multiple runs)
+
+## Data Files
+
+The repository includes anonymized data files:
+- `List of Variables.xlsx`: Variable definitions and baseline values
+- Facility baseline characteristics (anonymized)
+- Woman agent demographic distributions
+- Model calibration parameters
+
+**Note**: All facility and individual data have been anonymized to protect privacy and confidentiality.
+
+## Validation and Calibration
+
+The model has been:
+- **Calibrated** using the first 24 months of program implementation data
+- **Validated** against the final 12 months of observed outcomes
+- **Cross-validated** with system dynamics modeling results
+- **Sensitivity tested** across key parameter ranges
+
+## Multiple Runs and Statistical Analysis
+
+For robust results, we recommend:
+1. Running 100+ replications for preliminary analysis
+2. Running 500+ replications for publication-quality results
+3. Using the built-in statistical analysis tools
+4. Exporting results to external statistical software if needed
+
+## Troubleshooting
+
+### Common Issues
+
+**Model won't open:**
+- Ensure you have AnyLogic Personal Learning Edition or higher
+- Check that all files are in the same directory
+- Verify AnyLogic version compatibility
+
+**Slow performance:**
+- Reduce the number of agents for testing
+- Increase available RAM
+- Close other applications while running
+
+**Results don't match publication:**
+- Ensure you're using the calibrated parameter values
+- Run sufficient replications (500+) for stable results
+- Check scenario settings match the publication specifications
+
+### Getting Help
+- Check AnyLogic documentation: https://help.anylogic.com/
+- Review the model's built-in help and comments
+- Consult the original publication for methodological details
+
+## Citation
+
+If you use this model in your research, please cite:
+
+```
+Alibrahim, A.I., Mziray, N., Binyaruka, P., Maiba, J., Cassidy, R., Chalabi, Z., 
+Borghi, J., & Foss, A.M. (2025). Agent-Based Modeling as an Evaluation Tool to 
+Understand the Mechanisms of a Financial Incentives Scheme for Maternal and 
+Child Health in Tanzania. Journal of Artificial Societies and Social Simulation, 
+xx(x), x.
+```
+
+## License and Usage
+
+This model is provided for research and educational purposes. Please refer to the LICENSE file for specific terms of use.
+
+## Contact
+
+For questions about the model or technical issues:
+- Primary contact: [abdullah.alibrahim@ku.edu.kw]
+- Model documentation and support available through the publication authors
+
+## Acknowledgments
+
+This research was funded by the Medical Research Council under the Health Systems Research Initiative grant (MR/R013454/1). We thank all stakeholders who participated in model development and validation.
+
+---
+
+**Last updated**: June 7, 2025
+**Compatible with**: AnyLogic 8.0+
